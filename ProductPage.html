@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UClan Student Shop</title>
+    <!--Stylesheet-->
+    <link rel ="stylesheet" type = "text/css" href = "ProductPageStyle.css"/>
+    <!--Uclan student shop icon-->
+    <link rel ="Shortcut Icon" href="UClanIcon3.png"/>
+    <script src="https://kit.fontawesome.com/fcf5dfb0cf.js" crossorigin="anonymous"></script> <!--W3Schools-->
+<script>
+    function Delete(e){
+        let items = [];
+        JSON.parse(localStorage.getItem('items')).map(data=>{
+            if(data.id != e.parentElement.parentElement.children[0].textContent){
+                items.push(data);
+            }
+        });
+        localStorage.setItem('items',JSON.stringify(items));
+        window.location.reload();
+    }; //Fully Web Tutorials YouTube, Accessed on 23rd November, 2021//
+</script>
+</head>
+<body>
+<!--Navigation Bar Section-->
+<div class="navbar">
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn"> <!--How to make a navigation bar on Youtube CodingBus accessed on 11th November, 2021 -->
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">
+            <img src="UClanIcon3.png"   alt ="UClanIcon3" >
+        </label>
+        <h1 style="font-size: 3vw;">Student Shop</h1> 
+        <ul>
+            <li><a class="active" href="Assessment1.html">Home</a></li>
+            <li><a href="ProductPage.html">Products</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="submain">
+    <header id="header" class="header">
+        <h2>Shopping Cart</h2>
+        <div class="IconShopping">
+            <p>0</p>
+            <i class="fa fa-shopping-cart"></i>
+        </div>
+    </header><!--Fully Web Tutorial YouTube, accessed 21st November, 2021-->
+    <div class="ItemsBox">
+        <div class="Item">
+            <img src="assignment 1 resources/10753AntiqueCherryRedGD01.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo T-Shirt</p>
+                <p class="Description">cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days</p>
+                <p class="money">$<span>19.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/10970NavyGD01.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo T-Shirt</p>
+                <p class="Description">cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days</p>
+                <p class="money">$<span>19.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/10970RedGD01.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo T-Shirt</p>
+                <p class="Description">cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days</p>
+                <p class="money">$<span>19.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div>    <div class="Item">
+            <img src="assignment 1 resources/10753AntiqueHeliconiaGD01.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo T-Shirt</p>
+                <p class="Description">cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days</p>
+                <p class="money">$<span>19.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div>    <div class="Item">
+            <img src="assignment 1 resources/10753AntiqueSapphireGD01.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo T-Shirt</p>
+                <p class="Description">cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days</p>
+                <p class="money">$<span>19.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div>    <div class="Item">
+            <img src="assignment 1 resources/10753BlackGD01.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo T-Shirt</p>
+                <p class="Description">cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days</p>
+                <p class="money">$<span>19.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/10753CardinalRedGD01.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo T-Shirt</p>
+                <p class="Description">cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days</p>
+                <p class="money">$<span>19.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/10753CharcoalGD01.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo T-Shirt</p>
+                <p class="Description">cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days</p>
+                <p class="money">$<span>19.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/10753CherryRedGD01.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo T-Shirt</p>
+                <p class="Description">cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days</p>
+                <p class="money">$<span>19.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/10753CheshnutGD01.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo T-Shirt</p>
+                <p class="Description">cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days</p>
+                <p class="money">$<span>19.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/10753CobaltGD01.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo T-Shirt</p>
+                <p class="Description">cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days</p>
+                <p class="money">$<span>19.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/10753DaisyGD01.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo T-Shirt</p>
+                <p class="Description">cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days</p>
+                <p class="money">$<span>19.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/10753DarkChocolateGD01.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo T-Shirt</p>
+                <p class="Description">cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days</p>
+                <p class="money">$<span>19.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/10753DarkHeatherGD01.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo T-Shirt</p>
+                <p class="Description">cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days</p>
+                <p class="money">$<span>19.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/10753ForestGreenGD01.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo T-Shirt</p>
+                <p class="Description">cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days</p>
+                <p class="money">$<span>19.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/10753HeatherIrishGreenGD01.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo T-Shirt</p>
+                <p class="Description">cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days</p>
+                <p class="money">$<span>19.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/10753HeatherMilitaryGreenGD01.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo T-Shirt</p>
+                <p class="Description">cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days</p>
+                <p class="money">$<span>19.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/10753HeatherNavyGD01.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo T-Shirt</p>
+                <p class="Description">cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days</p>
+                <p class="money">$<span>19.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/10753HeatherOrangeGD01.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo T-Shirt</p>
+                <p class="Description">cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days</p>
+                <p class="money">$<span>19.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/10753HeatherPurpleGD01.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo T-Shirt</p>
+                <p class="Description">cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days</p>
+                <p class="money">$<span>19.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/10753HeatherRoyalGD01.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo T-Shirt</p>
+                <p class="Description">cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days</p>
+                <p class="money">$<span>19.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/10753HeliconiaGD01.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo T-Shirt</p>
+                <p class="Description">cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days</p>
+                <p class="money">$<span>19.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/10753IrishGreenGD01.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo T-Shirt</p>
+                <p class="Description">cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days</p>
+                <p class="money">$<span>19.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/10753KiwiGD01.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo T-Shirt</p>
+                <p class="Description">cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days</p>
+                <p class="money">$<span>19.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/10753LightBlueGD01.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo T-Shirt</p>
+                <p class="Description">cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days</p>
+                <p class="money">$<span>19.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/10753MarronGD01.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo T-Shirt</p>
+                <p class="Description">cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days</p>
+                <p class="money">$<span>19.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/10753MilitaryGreenGD01.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo T-Shirt</p>
+                <p class="Description">cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days</p>
+                <p class="money">$<span>19.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/10753NavyGD01.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo T-Shirt</p>
+                <p class="Description">cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days</p>
+                <p class="money">$<span>19.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/10753OrangeGD01.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo T-Shirt</p>
+                <p class="Description">cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days</p>
+                <p class="money">$<span>19.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/10753PurpleGD01.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo T-Shirt</p>
+                <p class="Description">cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days</p>
+                <p class="money">$<span>19.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/10753RedGD01.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo T-Shirt</p>
+                <p class="Description">cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days</p>
+                <p class="money">$<span>19.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/10753RoyalGD01.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo T-Shirt</p>
+                <p class="Description">cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days</p>
+                <p class="money">$<span>19.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/10753SandGD01.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo T-Shirt</p>
+                <p class="Description">cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days</p>
+                <p class="money">$<span>19.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/10753SapphireGD01.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo T-Shirt</p>
+                <p class="Description">cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days</p>
+                <p class="money">$<span>19.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/10753WhiteGD01.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo T-Shirt</p>
+                <p class="Description">cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days</p>
+                <p class="money">$<span>19.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/10756Allure BlueSS01.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Hoodie</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks</p>
+                <p class="money">$<span>39.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/10756AtlanticSS01.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Hoodie</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks</p>
+                <p class="money">$<span>39.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/10756Black MelangeSS01.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Hoodie</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks</p>
+                <p class="money">$<span>39.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/10756BlackSS01.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Hoodie</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks</p>
+                <p class="money">$<span>39.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/10756Blush PinkSS01.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Hoodie</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks</p>
+                <p class="money">$<span>39.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/10756BordeauxSS01.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Hoodie</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks</p>
+                <p class="money">$<span>39.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/10756Flint GreySS01.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Hoodie</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks</p>
+                <p class="money">$<span>39.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/10756Grey MelangeSS01.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Hoodie</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks</p>
+                <p class="money">$<span>39.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/10756Insignia BlueSS01.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Hoodie</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks</p>
+                <p class="money">$<span>39.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/10756LavaSS01.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Hoodie</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks</p>
+                <p class="money">$<span>39.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/10756LisaSS01.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Hoodie</p>
+                <p class="Description">cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days</p>
+                <p class="money">$<span>39.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/10756MidnightSS01.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Hoodie</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks</p>
+                <p class="money">$<span>39.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/10756MustardSS01.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Hoodie</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks</p>
+                <p class="money">$<span>39.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/10756Not WhiteSS01.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Hoodie</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks</p>
+                <p class="money">$<span>39.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/10756SageSS01.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Hoodie</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks</p>
+                <p class="money">$<span>39.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/10756Stone BlueSS01.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Hoodie</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks</p>
+                <p class="money">$<span>39.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/10846DustyRedW81PF.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Hoodie</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks</p>
+                <p class="money">$<span>39.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/10846GraphiteW81PF.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Hoodie</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks</p>
+                <p class="money">$<span>39.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/10846MidnightBlueW81PF.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Hoodie</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks</p>
+                <p class="money">$<span>39.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/13370Black-Melangee1733 Ultra Soft Feel Hooded Top  .jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Hoodie</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks</p>
+                <p class="money">$<span>39.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/13370BottleGreene1733 Ultra Soft Feel Hooded Top  .jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Hoodie</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks</p>
+                <p class="money">$<span>39.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/13370Caribbean-Bluee1733 Ultra Soft Feel Hooded Top  .jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Hoodie</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks</p>
+                <p class="money">$<span>39.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/13370Cerisee1733 Ultra Soft Feel Hooded Top  .jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Hoodie</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks</p>
+                <p class="money">$<span>39.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/13370CoralRosee1733 Ultra Soft Feel Hooded Top  .jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Hoodie</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks</p>
+                <p class="money">$<span>39.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/13370DustyBlacke1733 Ultra Soft Feel Hooded Top  .jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Hoodie</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks</p>
+                <p class="money">$<span>39.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/13370DustyGreye1733 Ultra Soft Feel Hooded Top  .jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Hoodie</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks</p>
+                <p class="money">$<span>39.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/13370DustyRede1733 Ultra Soft Feel Hooded Top  .jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Hoodie</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks</p>
+                <p class="money">$<span>39.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/13370Graphitee1733 Ultra Soft Feel Hooded Top  .jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Hoodie</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks</p>
+                <p class="money">$<span>39.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/13370GumdropGreene1733 Ultra Soft Feel Hooded Top  .jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Hoodie</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks</p>
+                <p class="money">$<span>39.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/13370Honeysucklee1733 Ultra Soft Feel Hooded Top  .jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Hoodie</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks</p>
+                <p class="money">$<span>39.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/13370Maroone1733 Ultra Soft Feel Hooded Top  .jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Hoodie</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks</p>
+                <p class="money">$<span>39.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/13370MidnightBluee1733 Ultra Soft Feel Hooded Top  .jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Hoodie</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks</p>
+                <p class="money">$<span>39.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/13370Peapode1733 Ultra Soft Feel Hooded Top  .jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Hoodie</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks</p>
+                <p class="money">$<span>39.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/13370VintageRoyale1733 Ultra Soft Feel Hooded Top  .jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Hoodie</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks</p>
+                <p class="money">$<span>39.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/9953Antique Cherry RedGD56.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo Jumpers</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy warm and luxury Jumpers for students that goes with everything to create winter looks</p>
+                <p class="money">$<span>29.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/9953Antique SapphireGD56.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo Jumpers</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy warm and luxury Jumpers for students that goes with everything to create winter looks</p>
+                <p class="money">$<span>29.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/9953AshGD56.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo Jumpers</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy warm and luxury Jumpers for students that goes with everything to create winter looks</p>
+                <p class="money">$<span>29.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/9953AzaleaGD56.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo Jumpers</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy warm and luxury Jumpers for students that goes with everything to create winter looks</p>
+                <p class="money">$<span>29.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/9953BlackGD56.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo Jumpers</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy warm and luxury Jumpers for students that goes with everything to create winter looks</p>
+                <p class="money">$<span>29.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/9953Carolina BlueGD56.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo Jumpers</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy warm and luxury Jumpers for students that goes with everything to create winter looks</p>
+                <p class="money">$<span>29.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/9953CharcoalGD56.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo Jumpers</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy warm and luxury Jumpers for students that goes with everything to create winter looks</p>
+                <p class="money">$<span>29.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/9953Cherry RedGD56.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo Jumpers</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy warm and luxury Jumpers for students that goes with everything to create winter looks</p>
+                <p class="money">$<span>29.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/9953Dark ChocolateGD56.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo Jumpers</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy warm and luxury Jumpers for students that goes with everything to create winter looks</p>
+                <p class="money">$<span>29.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/9953Forest GreenGD56.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo Jumpers</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy warm and luxury Jumpers for students that goes with everything to create winter looks</p>
+                <p class="money">$<span>29.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/9953GarnetGD56.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo Jumpers</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy warm and luxury Jumpers for students that goes with everything to create winter looks</p>
+                <p class="money">$<span>29.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/9953GoldGD56.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo Jumpers</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy warm and luxury Jumpers for students that goes with everything to create winter looks</p>
+                <p class="money">$<span>29.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/9953Graphite HeatherGD56.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo Jumpers</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy warm and luxury Jumpers for students that goes with everything to create winter looks</p>
+                <p class="money">$<span>29.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/9953Heather Sport Dark GreenGD56.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo Jumpers</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy warm and luxury Jumpers for students that goes with everything to create winter looks</p>
+                <p class="money">$<span>29.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/9953Heather Sport Dark MaroonGD56.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo Jumpers</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy warm and luxury Jumpers for students that goes with everything to create winter looks</p>
+                <p class="money">$<span>29.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/9953Heather Sport Dark NavyGD56.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo Jumpers</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy warm and luxury Jumpers for students that goes with everything to create winter looks</p>
+                <p class="money">$<span>29.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/9953Heather Sport RoyalGD56.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo Jumpers</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy warm and luxury Jumpers for students that goes with everything to create winter looks</p>
+                <p class="money">$<span>29.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/9953Heather Sport Scarlet RedGD56.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo Jumpers</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy warm and luxury Jumpers for students that goes with everything to create winter looks</p>
+                <p class="money">$<span>29.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/9953HeliconiaGD56.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo Jumpers</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy warm and luxury Jumpers for students that goes with everything to create winter looks</p>
+                <p class="money">$<span>29.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/9953Indigo BlueGD56.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo Jumpers</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy warm and luxury Jumpers for students that goes with everything to create winter looks</p>
+                <p class="money">$<span>29.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/9953Irish GreenGD56.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo Jumpers</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy warm and luxury Jumpers for students that goes with everything to create winter looks</p>
+                <p class="money">$<span>29.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/9953Legion BlueGD56.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo Jumpers</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy warm and luxury Jumpers for students that goes with everything to create winter looks</p>
+                <p class="money">$<span>29.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/9953Light BlueGD56.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo Jumpers</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy warm and luxury Jumpers for students that goes with everything to create winter looks</p>
+                <p class="money">$<span>29.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/9953Light PinkGD56.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo Jumpers</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy warm and luxury Jumpers for students that goes with everything to create winter looks</p>
+                <p class="money">$<span>29.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/9953MaroonGD56.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo Jumpers</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy warm and luxury Jumpers for students that goes with everything to create winter looks</p>
+                <p class="money">$<span>29.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/9953Military GreenGD56.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo Jumpers</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy warm and luxury Jumpers for students that goes with everything to create winter looks</p>
+                <p class="money">$<span>29.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/9953Mint GreenGD56.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo Jumpers</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy warm and luxury Jumpers for students that goes with everything to create winter looks</p>
+                <p class="money">$<span>29.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/9953NavyGD56.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo Jumpers</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy warm and luxury Jumpers for students that goes with everything to create winter looks</p>
+                <p class="money">$<span>29.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/9953Old GoldGD56.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo Jumpers</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy warm and luxury Jumpers for students that goes with everything to create winter looks</p>
+                <p class="money">$<span>29.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/9953OrangeGD56.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo Jumpers</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy warm and luxury Jumpers for students that goes with everything to create winter looks</p>
+                <p class="money">$<span>29.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/9953OrchidGD56.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo Jumpers</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy warm and luxury Jumpers for students that goes with everything to create winter looks</p>
+                <p class="money">$<span>29.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/9953PaprikaGD56.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo Jumpers</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy warm and luxury Jumpers for students that goes with everything to create winter looks</p>
+                <p class="money">$<span>29.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/9953PlumGD56.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo Jumpers</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy warm and luxury Jumpers for students that goes with everything to create winter looks</p>
+                <p class="money">$<span>29.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/9953PurpleGD56.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo Jumpers</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy warm and luxury Jumpers for students that goes with everything to create winter looks</p>
+                <p class="money">$<span>29.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/9953RedGD56.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo Jumpers</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy warm and luxury Jumpers for students that goes with everything to create winter looks</p>
+                <p class="money">$<span>29.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/9953RoyalGD56.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo Jumpers</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy warm and luxury Jumpers for students that goes with everything to create winter looks</p>
+                <p class="money">$<span>29.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/9953SandGD56.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo Jumpers</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy warm and luxury Jumpers for students that goes with everything to create winter looks</p>
+                <p class="money">$<span>29.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/9953SapphireGD56.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo Jumpers</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy warm and luxury Jumpers for students that goes with everything to create winter looks</p>
+                <p class="money">$<span>29.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div><div class="Item">
+            <img src="assignment 1 resources/9953Sports GreyGD56.jpg" width="300" height="300" alt="t-shirt">
+            <div class="ItemInfo">
+                <p class="name">UClan Logo Jumpers</p>
+                <p class="Description">cotton authentic character and practicality are combined in this comfy warm and luxury Jumpers for students that goes with everything to create winter looks</p>
+                <p class="money">$<span>29.99</span></p>
+                <a href="#" title="add to cart" class="AddToCart">Add To Cart</a>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<div class="CartBox">
+    <div class="Cart">
+        <i class="fa fa-close"></i>
+        <h1>Cart</h1>
+        <table></table>
+    </div>
+</div>
+
+<!--script-->
+<script src="Assessment1.JavaScript.js"></script>
+
+</body>
+</html>
+
+
+    
