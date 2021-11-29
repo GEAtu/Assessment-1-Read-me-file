@@ -1,6 +1,6 @@
-#Gideon Enenche At
-#G20956259
-#geatu@uclan.ac.uk
+##Gideon Enenche At
+##G20956259
+##geatu@uclan.ac.uk
 #
 # Assessment-1-Read-me-file
 Outlines the web pages that have been implemented and the operation of each page
