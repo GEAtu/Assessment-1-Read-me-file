@@ -18,6 +18,7 @@ Products Page: This is the page that is accessed only from the navigation link i
 
 Cart Page: This is the page that is accessed once the user wants to view items which has been selected and added to the cart. This page will contain either T-shirts, hoodies or jumpers which have been selected by the user. It will contain the serial number of the item, the amount of items the user has purchased, and the price of the item aswell. The cart page has been linked to the cart icon found in the products page and can only be accessed in the products page. This is to make things easier and more efficient/accessible for users.
 
+Assessment-2-Read-Me-File
 
 #Student name: Gideon Enenche Atu
 Student ID: G20956259
