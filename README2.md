@@ -1,6 +1,8 @@
-##Student name: Gideon Enenche Atu
-##Student ID: G20956259
-##Student acccount: geatu@uclan.ac.uk
+#Student name: Gideon Enenche Atu
+Student ID: G20956259
+Student acccount: geatu@uclan.ac.uk
+
+#Assessment-2-Read-Me-File
 
 How to access file zilla with name and passwords, Web Technologies is the folder containing all files regarding the assessment 2
 local host: vesta.uclan.ac.uk
