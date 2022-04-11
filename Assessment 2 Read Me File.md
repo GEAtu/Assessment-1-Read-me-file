@@ -7,7 +7,7 @@
 https://github.com/UCLanCSC/github-activity-GEAtu.git<!--This is the link to the GitHub Repo of Gideon Enenche Atu geatu@uclan.ac.uk G209562509 UCLanCSC/github-activity-GEAtu-->
 https://github.com/GEAtu/Assessment-1-Read-me-file.git<!--This is the link to the GitHub Repo of Gideon Enenche Atu geatu@uclan.ac.uk G209562509 GEAtu/Assessment-1-Read-me-file-->
 
-How to access FileZilla and phpMyAdmin with name and passwords, Web Technologies is the folder containing all files regarding the assessment 2
+How to access FileZilla and phpMyAdmin with name and passwords, Atu-Gideon-Enenche_G20956259_assignment-two is the folder containing all files regarding the assessment 2
 
 local host: vesta.uclan.ac.uk
 
